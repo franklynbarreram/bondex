@@ -1,0 +1,26 @@
+.ellipse {
+  width: 731px;
+  height: 938px;
+  opacity: 0.20000000298023224;
+  filter: blur(150px);
+  border-radius: 938px;
+  position: absolute;
+  top: 43px;
+  left: -311px;
+}
+
+.gradientBgTitle {
+  background: linear-gradient(
+    90deg,
+    #9bb6fd 1.47%,
+    #c6f6f6 51%,
+    #1a8771 66.41%,
+    #53b4a0 73.51%
+  );
+  opacity: 0.6000000238418579;
+  filter: blur(46.4813232421875px);
+  width: 535px;
+  height: 18%;
+  margin: 0 auto;
+  z-index: -1;
+}

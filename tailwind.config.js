@@ -12,7 +12,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "header-talent": "url('/images/bg-talent.png')",
+      },
+    },
     colors: {
       ...colors,
       primary: {

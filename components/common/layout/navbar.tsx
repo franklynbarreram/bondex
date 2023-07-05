@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-blue-900">
+    <Disclosure as="nav" className="bg-blue-900 z-40 sticky">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-[1440px] px-2 sm:px-6 lg:px-8">

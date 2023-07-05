@@ -5,7 +5,6 @@
 html,
 body {
   font-family: "Poppins";
-  background-color: var(--color-blue-900);
 }
 
 /* Works on Firefox */
@@ -57,6 +56,12 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: var(--color-blue-900);
+  // max-width: 1440px;
+  // margin: 0 auto;
+}
 
 @layer utilities {
   .hide-scroll-bar::-webkit-scrollbar {

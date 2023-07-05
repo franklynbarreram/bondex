@@ -7,7 +7,9 @@ export default function Document() {
       <Head />
       <body>
         <Navbar />
-        <Main />
+        <div className="container-pages max-w-[1440px] mx-auto">
+          <Main />
+        </div>
         <NextScript />
       </body>
     </Html>
