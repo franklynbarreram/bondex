@@ -14,6 +14,7 @@ export interface TypographyProps {
     | "smallSpan"
     | "mediumParagraph"
     | "bigParagraph"
+    | "smallParagraph"
     | "custom";
   tag?: string;
   text?: string;
@@ -133,7 +134,15 @@ export const Typography: React.FC<TypographyProps> = ({
         {children || text}
       </p>
     );
-
+ if (type === "smallParagraph")
+   return (
+     <p
+       className={clsx("text-sm", className)}
+       onClick={() => onClick && onClick()}
+     >
+       {children || text}
+     </p>
+   );
   return (
     <TagComponent
       className={clsx(className)}

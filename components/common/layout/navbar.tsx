@@ -12,9 +12,9 @@ const navigation = [
   { name: "For Companies", href: "#", icon: Icons.companies },
 ];
 
-export default function Navbar() {
+export const Navbar = () => {
   return (
-    <Disclosure as="nav" className="bg-blue-900 z-40 sticky">
+    <Disclosure as="nav" className="bg-blue-900 sticky z-40">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-[1440px] px-2 sm:px-6 lg:px-8">
@@ -100,4 +100,4 @@ export default function Navbar() {
       )}
     </Disclosure>
   );
-}
+};

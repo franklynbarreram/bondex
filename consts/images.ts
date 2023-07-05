@@ -5,3 +5,8 @@ export enum Images {
   linesLeft = "/images/lines-left.png",
   linesRight = "/images/lines-right.png",
 }
+
+export enum footerImages {
+  downloadAppStore = "/imgs/footer/downloadAppStore.png",
+  downloadplayStore = "/imgs/footer/downloadplayStore.png",
+}

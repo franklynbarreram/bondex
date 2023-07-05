@@ -1,13 +1,13 @@
 import React from "react";
 import { Typography } from "@/components/common/typography";
-import Styles from "./styles.module.scss";
+import styles from "./styles.module.scss";
 import clsx from "clsx";
 import { Images } from "@/consts";
 
 const TalentNetwork = () => {
   return (
     <>
-      <div className={clsx("bg-primary-500 z-10", Styles.ellipse)}></div>
+      <div className={clsx("bg-primary-500 z-10", styles.ellipse)}></div>
       <img
         src={Images.spaceLines}
         className="absolute right-0 top-0 z-10"
@@ -23,7 +23,7 @@ const TalentNetwork = () => {
             Meet Bondex
           </Typography>
           <div
-            className={clsx("absolute w-full h-full ", Styles.gradientBgTitle)}
+            className={clsx("absolute w-full h-full ", styles.gradientBgTitle)}
           ></div>
         </div>
 
