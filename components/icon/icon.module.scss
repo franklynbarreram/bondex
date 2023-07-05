@@ -1,0 +1,43 @@
+.svg {
+	path {
+		stroke: currentColor;
+		transition: all 0.3s ease;
+	}
+	line {
+		stroke: currentColor;
+		transition: all 0.3s ease;
+	}
+	rect {
+		stroke: currentColor;
+		transition: all 0.3s ease;
+	}
+	circle {
+		stroke: currentColor;
+		transition: all 0.3s ease;
+	}
+}
+
+.svgFillPath {
+	path {
+		fill: currentColor;
+		transition: all 0.3s ease;
+	}
+}
+.svgFillLine {
+	line {
+		fill: currentColor;
+		transition: all 0.3s ease;
+	}
+}
+.svgFillRect {
+	rect {
+		fill: currentColor;
+		transition: all 0.3s ease;
+	}
+}
+.svgFillCircle {
+	circle {
+		fill: currentColor;
+		transition: all 0.3s ease;
+	}
+}

@@ -1,0 +1,61 @@
+@import "/styles/variables";
+
+.input {
+  .inputDateWithValue {
+    &::-webkit-datetime-edit-text {
+      color: var(--color-gray-800);
+    }
+    &::-webkit-datetime-edit-month-field {
+      color: var(--color-gray-800);
+    }
+    &::-webkit-datetime-edit-day-field {
+      color: var(--color-gray-800);
+    }
+    &::-webkit-datetime-edit-year-field {
+      color: var(--color-gray-800);
+    }
+  }
+
+  input {
+    &::placeholder {
+      opacity: 1;
+      visibility: visible;
+      transition: visibility 0s, opacity 0.2s linear;
+    }
+    &:focus::placeholder {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+      filter: invert(0.6);
+      margin-right: -6px;
+    }
+    &::-webkit-datetime-edit-text {
+      color: var(--color-gray-200);
+    }
+    &::-webkit-datetime-edit-month-field {
+      color: var(--color-gray-200);
+    }
+    &::-webkit-datetime-edit-day-field {
+      color: var(--color-gray-200);
+    }
+    &::-webkit-datetime-edit-year-field {
+      color: var(--color-gray-200);
+    }
+    &:focus {
+      &::-webkit-datetime-edit-text {
+        color: var(--color-gray-800);
+      }
+      &::-webkit-datetime-edit-month-field {
+        color: var(--color-gray-800);
+      }
+      &::-webkit-datetime-edit-day-field {
+        color: var(--color-gray-800);
+      }
+      &::-webkit-datetime-edit-year-field {
+        color: var(--color-gray-800);
+      }
+    }
+  }
+}

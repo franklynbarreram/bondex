@@ -1,0 +1,83 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+html,
+body {
+  font-family: "Poppins";
+  background-color: var(--color-blue-900);
+}
+
+/* Works on Firefox */
+.scroll-custom {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.692) #f5f5f54b;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.scroll-custom::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f5f5f54b;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: transparent;
+  background-image: -webkit-gradient(
+    linear,
+    40% 0%,
+    75% 84%,
+    from(rgba(0, 0, 0, 0.692)),
+    to(rgba(0, 0, 0, 0.692)),
+    color-stop(0.6, rgba(0, 0, 0, 0.692))
+  );
+}
+
+:root {
+  --color-secondary: #15141a;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-white: white;
+  --color-alert-success: #37a211;
+  --color-alert-error: #b52423;
+  --color-facebook: #4267b2;
+  --transparent-gray-200: rgb(221, 221, 221, 0.5);
+  --transparent-gray-800: rgb(68, 68, 68, 0.5);
+
+  // new
+  --color-primary-300: #15bc9c;
+  --color-primary-400: #18a187;
+  --color-primary-500: #1a8771;
+  --color-blue-900: #001126;
+  --color-gray-200: #b4c1d4;
+  --color-gray-300: #93a7c2;
+  --color-gray-400: #728cb0;
+  --color-gray-600: #445a78;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hide-scroll-bar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .text-gradient-primary {
+    background: linear-gradient(
+      90deg,
+      #9bb6fd 1.47%,
+      #c6f6f6 51%,
+      #1a8771 66.41%,
+      #53b4a0 73.51%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

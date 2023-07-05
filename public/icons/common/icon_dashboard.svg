@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21.558" viewBox="0 0 24 21.558">
+  <g id="icon_dashboard" transform="translate(0 -4.787)">
+    <g id="Grupo_1" data-name="Grupo 1" transform="translate(0 4.787)">
+      <circle id="Elipse_1" data-name="Elipse 1" cx="1.947" cy="1.947" r="1.947" fill="#fff"/>
+      <rect id="Rectángulo_1" data-name="Rectángulo 1" width="15.917" height="3.048" transform="translate(8.083 0.423)" fill="#fff"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="1.947" cy="1.947" r="1.947" transform="translate(0 8.915)" fill="#fff"/>
+      <rect id="Rectángulo_2" data-name="Rectángulo 2" width="15.917" height="3.048" transform="translate(8.083 9.338)" fill="#fff"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="1.947" cy="1.947" r="1.947" transform="translate(0 17.664)" fill="#fff"/>
+      <rect id="Rectángulo_3" data-name="Rectángulo 3" width="15.917" height="3.048" transform="translate(8.083 18.087)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
