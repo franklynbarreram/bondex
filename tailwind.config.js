@@ -47,6 +47,34 @@ module.exports = {
         },
       },
     },
+    screens: {
+      xs: "320px",
+      // => @media (min-width: 320px) { ... }
+
+      iphone: "375px",
+      // => @media (min-width: 375px) { ... }
+
+      iphonePro: "414px",
+      // => @media (min-width: 414px) { ... }
+
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "1.5xl": "1440px",
+      // => @media (min-width: 1440px) { ... }
+
+      "2xl": "1800px",
+      // => @media (min-width: 1800px) { ... }
+    },
   },
   plugins: [],
 };
