@@ -13,6 +13,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ["Sora", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
+    },
     colors: {
       ...colors,
       primary: {
@@ -43,6 +47,7 @@ module.exports = {
       "transparent-color": {
         gray: {
           200: "var(--transparent-gray-200)",
+
           800: "var(--transparent-gray-800)",
         },
       },

@@ -1,4 +1,5 @@
-import Navbar from "@/components/common/layout/navbar";
+
+import { Navbar, Footer } from "@/components/common/layout";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -8,7 +9,9 @@ export default function Document() {
       <body>
         <Navbar />
         <Main />
+				<Footer></Footer>
         <NextScript />
+				
       </body>
     </Html>
   );

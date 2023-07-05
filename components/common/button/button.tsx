@@ -60,7 +60,6 @@ export const Button: React.FC<
             disabled={disabled}
             onClick={onClick}
             className={clsx(
-              className,
               //border radius
               boderRadius,
               // with border
@@ -152,7 +151,8 @@ export const Button: React.FC<
               sizesButton,
               "focus:outline-none",
 
-              "disabled:cursor-not-allowed"
+              "disabled:cursor-not-allowed",
+              className
             )}
             {...props}
           >
@@ -192,7 +192,6 @@ export const Button: React.FC<
           disabled={disabled}
           onClick={onClick}
           className={clsx(
-            className,
             //border radius
             boderRadius,
             // with border
@@ -284,7 +283,8 @@ export const Button: React.FC<
             sizesButton,
             "focus:outline-none",
 
-            "disabled:cursor-not-allowed"
+            "disabled:cursor-not-allowed",
+            className
           )}
           {...props}
         >
