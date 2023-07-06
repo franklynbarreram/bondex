@@ -5,7 +5,7 @@ import TalentNetwork from "@/components/home/talent-network";
 
 const Home = () => {
   return (
-    <div className="container-home px-[73px]">
+    <div className="container-home md:px-6 xl:px-[73px]">
       <TalentNetwork />
     </div>
   );

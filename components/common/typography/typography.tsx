@@ -45,7 +45,7 @@ export const Typography: React.FC<TypographyProps> = ({
   if (type === "mediumTitle")
     return (
       <h2
-        className={clsx("text-6xl", className)}
+        className={clsx("text-[30px] md:text-[38px] xl:text-6xl", className)}
         onClick={() => onClick && onClick()}
       >
         {children || text}
@@ -110,7 +110,7 @@ export const Typography: React.FC<TypographyProps> = ({
   if (type === "bigParagraph")
     return (
       <p
-        className={clsx("text-xl", className)}
+        className={clsx("md:text-lg xl:text-xl", className)}
         onClick={() => onClick && onClick()}
       >
         {children || text}
@@ -134,15 +134,15 @@ export const Typography: React.FC<TypographyProps> = ({
         {children || text}
       </p>
     );
- if (type === "smallParagraph")
-   return (
-     <p
-       className={clsx("text-sm", className)}
-       onClick={() => onClick && onClick()}
-     >
-       {children || text}
-     </p>
-   );
+  if (type === "smallParagraph")
+    return (
+      <p
+        className={clsx("text-sm", className)}
+        onClick={() => onClick && onClick()}
+      >
+        {children || text}
+      </p>
+    );
   return (
     <TagComponent
       className={clsx(className)}
