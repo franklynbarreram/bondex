@@ -6,11 +6,11 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <Navbar />
+       
         <div className="container-pages max-w-[1440px] mx-auto">
           <Main />
         </div>
-        <Footer />
+
         <NextScript />
       </body>
     </Html>

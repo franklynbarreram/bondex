@@ -1,0 +1,40 @@
+@import "/styles/utilities.scss";
+@import "/styles/variables.scss";
+$medida: 1920;
+.ellipse {
+  width: calculate-vw(1100, $medida);
+  height: calculate-vw(320, $medida);
+  filter: blur(100px);
+  flex-shrink: 0;
+  background-color: #57ba9e;
+  opacity: 0.11;
+  @media screen and (max-width: 1024px) {
+    $medida: 1024;
+    width: calculate-vw(750, $medida);
+    height: calculate-vw(500, $medida);
+  }
+	 @media screen and (max-width: 640px) {
+    $medida: 640;
+    width: calculate-vw(640, $medida);
+    height: 500px;
+  }
+	 @media screen and (max-width: 428px) {
+    $medida: 428;
+    width: calculate-vw(428, $medida);
+    height: 500px;
+  }
+}
+
+.positionEllipse {
+  position: absolute;
+  bottom: 0;
+  left: calculate-vw(350, $medida);
+  @media screen and (max-width: 1024px) {
+    $medida: 1024;
+    left: calculate-vw(100, $medida);
+  }
+  @media screen and (max-width: 640px) {
+    $medida: 640;
+    left: calculate-vw(0, $medida);
+  }
+}
