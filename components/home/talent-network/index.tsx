@@ -4,6 +4,7 @@ import styles from "./styles.module.scss";
 import clsx from "clsx";
 import { Images } from "@/consts";
 
+
 const TalentNetwork = () => {
   return (
     <>

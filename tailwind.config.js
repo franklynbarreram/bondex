@@ -55,6 +55,9 @@ module.exports = {
           800: "var(--transparent-gray-800)",
         },
       },
+      ellipse: {
+        default: "var(--color-ellipse-default)",
+      },
     },
     screens: {
       xs: "320px",

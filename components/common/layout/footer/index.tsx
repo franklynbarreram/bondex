@@ -1,9 +1,12 @@
 import React from "react";
-import { Typography } from "../typography";
+import { Typography } from "../../typography";
 import { Images, footerImages } from "@/consts";
 import Image from "next/image";
-import { Button } from "../button";
+
 import Link from "next/link";
+
+import styles from "./styles.module.scss";
+import clsx from "clsx";
 
 export const Footer = () => {
   const arrayLinks = [
@@ -60,9 +63,32 @@ export const Footer = () => {
     },
   ];
 
+  const arraySocialMedia = [
+    {
+      icon: "/icons/socialMedia/discord.svg",
+      url: "",
+    },
+    {
+      icon: "/icons/socialMedia/linkedin.svg",
+      url: "",
+    },
+    {
+      icon: "/icons/socialMedia/twitter.svg",
+      url: "",
+    },
+    {
+      icon: "/icons/socialMedia/facebook.svg",
+      url: "",
+    },
+    {
+      icon: "/icons/socialMedia/instagram.svg",
+      url: "",
+    },
+  ];
+
   return (
-    <footer className="max-w-[1440px] mx-auto">
-      <div className="px-10 sm:px-28 pt-16 pb-12 flex flex-col gap-y-[50px] xl:gap-y-[78px] ">
+    <footer className="  relative">
+      <div className="px-10  1.5xl:px-28 pt-16 pb-12 flex flex-col gap-y-[50px] xl:gap-y-[78px] ">
         <div className="flex justify-between flex-col xl:flex-row">
           <div className="flex items-center xl:items-start flex-col">
             <div className="max-w-[320px] flex items-center xl:items-start flex-col gap-y-8">
@@ -90,11 +116,25 @@ export const Footer = () => {
                 >
                   Join our communities
                 </Typography>
+                <div className="flex gap-x-4 mt-2">
+                  {arraySocialMedia.map((item, index) => {
+                    return (
+                      <button key={index}>
+                        <Image
+                          src={item.icon}
+                          width={34}
+                          height={34}
+                          alt={"icon"}
+                        ></Image>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
           <div className="flex flex-col xl:flex-row xl:gap-x-[114px] mt-10 xl:mt-0">
-            <div className="flex justify-center gap-x-[114px] sm:gap-x-[286px] iphonePro:justify-between flex-wrap xl:gap-x-[88px] gap-y-5">
+            <div className="flex justify-center gap-x-[114px] sm:gap-x-[286px] iphonePro:justify-between flex-wrap xl:gap-x-[40px] 1.5xl:gap-x-[88px] gap-y-5">
               {arrayLinks.map((item, index) => {
                 return (
                   <div key={index} className="text-center iphonePro:text-start">
@@ -190,6 +230,11 @@ export const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={clsx(styles.positionEllipse)}>
+        {" "}
+        <div className={clsx("", styles.ellipse)}></div>
       </div>
     </footer>
   );

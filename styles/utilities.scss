@@ -1,0 +1,6 @@
+@use 'sass:math';
+
+@function calculate-vw($size, $screen) {
+	$vw-size: (math.div($size, $screen)) * 100vw;
+	@return $vw-size;
+}
